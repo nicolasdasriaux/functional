@@ -64,11 +64,10 @@ object PlaygroundActionsCombined {
 
   /**
   [TODO] Créer une action qui combine :
-
-  * la création du schéma des deux tables,
-  * l'insertion des données de test dans les deux tables,
-  * la requête qui joint les clients et les commandes avec une jointure externe gauche,
-  * la destruction du schéma des deux tables.
+  - la création du schéma des deux tables,
+  - l'insertion des données de test dans les deux tables,
+  - la requête qui joint les clients et les commandes avec une jointure externe gauche,
+  - la destruction du schéma des deux tables.
 
   Et qui retourne une séquence de couples client et option de commande.
   */

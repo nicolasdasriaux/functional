@@ -17,10 +17,9 @@ ENTREES / SORTIE EN FONCTIONNEL
 Nous allons utiliser Slick, un framework de mapping fonctionnel / relationel
 pour illustrer les principes de séparation des E/S en fonctionnel :
 
-* Dans la partie PURE, des fonctions fabriquent (et combinent)
+- Dans la partie PURE, des fonctions fabriquent (et combinent)
   des objets immutables correspondant aux actions d'E/S à effectuer.
-
-* Dans la partie IMPURE, les actions sont exécutées.
+- Dans la partie IMPURE, les actions sont exécutées.
 */
 
 /**
@@ -29,9 +28,9 @@ REQUETES (1/5)
 Une requête est représentée par une instance de la classe `Query`
 comportant 3 paramètres de généricité :
 
-* la réprésentation de la table requêtée (ici décrite par la classe `Customers`),
-* le type de la ligne de résulat (ici la case class `Customer`),
-* le type de la collection de lignes du résultat
+- la réprésentation de la table requêtée (ici décrite par la classe `Customers`),
+- le type de la ligne de résulat (ici la case class `Customer`),
+- le type de la collection de lignes du résultat
   lorque la requête sera exécutée (ici une séquence `Seq`).
 
 Une requête est un objet immutable,
@@ -51,7 +50,7 @@ ACTIONS SUR LA BASE DE DONNEES (2/5)
 Une action sur la base de donnée est représentée par une instance de la classe `DBIO`
 comportant 1 paramètre de généricité :
 
-* Type du résultat quand l'action sera executée.
+- Type du résultat quand l'action sera executée.
 
 Une action de base de données est un objet immutable,
 qui est simplement une représention d'une action d'E/S
@@ -217,11 +216,11 @@ TRANSPARENCE REFERENTIELLE (5/5)
 
 Toutes les fonctions qui fabriquent des requêtes ou des actions respectent deux principes :
 
-* Pour la même valeur des paramètres,
+- Pour la même valeur des paramètres,
   la fonction retourne le même objet requête ou action
   ('même' au sens de l'égalité par valeur et non par référence).
 
-* Il n'y a aucun effet sur la base de données,
+- Il n'y a aucun effet sur la base de données,
   ni lecture, ni écriture, ni manipulation du schéma.
 
 En jargon académique, on parle de transparence référentielle.
