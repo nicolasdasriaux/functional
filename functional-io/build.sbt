@@ -1,6 +1,6 @@
 name := "functional-io"
 
-organization := "fr.valtech"
+organization := "fr.nikorada"
 
 scalaVersion := "2.11.6"
 

@@ -1,6 +1,6 @@
 name := "functional-crossword"
 
-organization := "fr.valtech"
+organization := "fr.nikorada"
 
 scalaVersion := "2.11.6"
 
