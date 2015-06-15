@@ -28,7 +28,7 @@ REQUETES (1/5)
 Une requête est représentée par une instance de la classe `Query`
 comportant 3 paramètres de généricité :
 
-- la réprésentation de la table requêtée (ici décrite par la classe `Customers`),
+- la représentation de la table requêtée (ici décrite par la classe `Customers`),
 - le type de la ligne de résulat (ici la case class `Customer`),
 - le type de la collection de lignes du résultat
   lorque la requête sera exécutée (ici une séquence `Seq`).
