@@ -10,6 +10,7 @@ target
 .idea*
 .classpath
 .project
+.settings
 .cache
 .idea_modules
 .idea
