@@ -85,7 +85,7 @@ class AboutOptions extends KoanSuite {
     Some(5).getOrElse(0) should be (__)
   }
 
-  koan("Options can be used in a `for comprehension") {
+  koan("Options can be used in a `for` comprehension") {
     def fullName(firstName: Option[String], lastName: Option[String]): Option[String] = {
       for {
         _firstName <- firstName
