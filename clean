@@ -1,0 +1,4 @@
+rm -rf functional-crossword/target/ functional-crossword/project/target/
+rm -rf functional-io/target/ functional-io/project/target/
+rm -rf functional-koans/target/ functional-koans/project/target/ functional-koans/project/project/target/
+
